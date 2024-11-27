@@ -4,7 +4,6 @@ const chat_messages_container = document.querySelector(".chat-messages");
 const room_name = document.getElementById("room-name");
 const room_users_list = document.getElementById("users");
 
-// get username & room from URL
 const { username, room } = Qs.parse(window.location.search, {
     ignoreQueryPrefix: true
 });
@@ -15,8 +14,6 @@ socket.emit("user-join", { username, room });
 socket.on("message", message => {
     console.log(message);
     sendMessageToDOM(message);
-
-    // scroll down to the current message
     chat_messages_container.scrollTop = chat_messages_container.scrollHeight;
 });
 
@@ -30,20 +27,11 @@ socket.on("room-users", ({ room, users }) => {
 
 
 chat_form.addEventListener("submit", (e) => {
-    e.preventDefault(); // to prevent any some kind of refresh for the page after submit
-
-    // get message content
+    e.preventDefault(); 
     const msg = e.target.elements.msg.value;
 
     socket.emit("chat-message", msg);
-    // input validation
-   // if (validateInput(msg)) {
-        // send message to server
-   // } else {
-    //    alert("Please enter a valid message!");
-   // }
-
-    // empty input after submit
+  
     e.target.elements.msg.value = "";
     e.target.elements.msg.focus();
 });
@@ -75,8 +63,3 @@ function outputUserList(users) {
     `;
 }
 
-
-//function validateInput(message) {
-//    const pattern = /^[a-zA-Z0-9_]+$/;
-//    return pattern.test(message);
-//}

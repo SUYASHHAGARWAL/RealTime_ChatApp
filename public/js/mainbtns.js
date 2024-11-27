@@ -10,10 +10,6 @@ document.getElementById("link3").addEventListener("click", function () {
 	window.open("https://github.com/suyashhagarwal", "_blank");
 });
 
-// document.getElementById("link6").addEventListener("click", function () {
-//     window.open("Suyash_agarwal.pdf", "_blank");
-// });
-
 document.getElementById("link5").addEventListener("click", function () {
 	window.open("https://suyashhagarwal.github.io/My-Portfolio/", "_blank");
 });
