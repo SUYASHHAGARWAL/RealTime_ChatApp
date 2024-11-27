@@ -35,7 +35,7 @@
 					</div>
 					<div class="form-control">
 						<label for="room">Room</label>
-						<select name="room" id="room" >
+						<select name="room" id="room" required >
 							<option value="" >Select the Room you want to join</option>
 							<option value="JavaScript">JavaScript</option>
 							<option value="Python">Python</option>
@@ -49,8 +49,32 @@
 				</form>
 			</main>
 		</div>
-
-		<!-- <script src="/socket.io/socket.io.js"></script>
-  		<script src="js/main.js"></script> -->
+		<div class="important-links">
+			<h2>Important Links!</h2>
+			<div class="button-container">
+				<button id="link1">
+					<i class="fas fa-code"></i> ChatApp Repository
+				</button>
+				<button id="link2">
+					<i class="fab fa-linkedin"></i> LinkedIn
+				</button>
+				<button id="link3">
+					<i class="fab fa-github"></i> Github
+				</button>
+				<button id="link4" style="padding: 0; border: none; background: none; border-radius: 20px;">
+					<a target="_blank" href="./js/Suyash_agarwal .pdf" style="display: block; padding: 10px 20px; text-decoration: none; background: #4caf50; color: white; border-radius: 20px; text-align: center;">
+						<i class="fas fa-file-pdf"></i> Resume
+					</a>
+				</button>
+				<button id="link5">
+					<i class="fas fa-user-tie"></i> Portfolio
+				</button>
+			</div>
+			
+		</div>
+		
+		
+		<!-- <script src="/socket.io/socket.io.js"></script> -->
+  		<script src="js/mainbtns.js"></script>
 	</body>
 </html>

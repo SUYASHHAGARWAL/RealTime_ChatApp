@@ -75,6 +75,7 @@ function outputUserList(users) {
     `;
 }
 
+
 //function validateInput(message) {
 //    const pattern = /^[a-zA-Z0-9_]+$/;
 //    return pattern.test(message);
