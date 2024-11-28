@@ -1,6 +1,6 @@
 # RealTime_ChatApp
 
-A simple yet efficient real-time chat application built using Node.js and Socket.IO. The application allows users to join chatrooms, interact with other participants, and leave the room while maintaining a seamless and interactive experience.
+A simple yet efficient real-time chat application built using Node.js and Socket.IO. This is the user side of the application. The application allows users to join chatrooms, interact with other participants, and leave the room while maintaining a seamless and interactive experience.
 
 
 Features:
@@ -64,3 +64,15 @@ How It Works
 - Join Room: Enter the selected chatroom to interact with other participants.
 - Real-Time Updates: All messages are instantly updated for all users in the room.
 - Leave Room: Exit the room when done; your chats will not persist.
+
+
+Small Message
+------------
+
+As a proficient Django developer, I have extensive experience in building scalable and robust applications. While my primary expertise lies in Django, the tech stack for this project was based on Node.js. Although my experience with Node.js is limited, I embraced this opportunity to expand my skills and effectively developed this application. This project showcases my willingness to learn new technologies and adapt to different frameworks while maintaining high development standards.
+
+
+Note
+----
+
+The login with social media buttons are not functional now.

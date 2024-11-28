@@ -14,13 +14,13 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Task-Realtime ChatApp</title>
 	</head>
-	<body">
+	<body>
 		<div class="join-container">
 			<header class="join-header">
-				<h1> Realtime Chat application</h1>
+				<h1>Kuvaka Tech Task - Chat application</h1>
 			</header>
 			<main class="join-main">
-				<form id = "auth-form" action="chat.html">
+				<form id="auth-form" action="chat.html">
 					<div class="form-control">
 						<label for="username">Display Name</label>
 						<input
@@ -32,9 +32,9 @@
 						/>
 					</div>
 					<div class="form-control">
-						<label for="room">Room</label>
-						<select name="room" id="room" required >
-							<option value="" >Select the Room you want to join</option>
+						<label for="room">Select Invited Chat Room</label>
+						<select name="room" id="room" required>
+							<option value="">Select the Room you want to join</option>
 							<option value="JavaScript">JavaScript</option>
 							<option value="Python">Python</option>
 							<option value="PHP">PHP</option>
@@ -43,34 +43,81 @@
 							<option value="Java">Java</option>
 						</select>
 					</div>
-					<button class="btn">Join Chat</button>
+					<div class="form-control">
+						<label for="guest-mode">Access Mode</label>
+						<input
+							type="text"
+							id="guest-mode"
+							value="Guest Mode"
+							readonly
+							style="background-color: #f5f5f5; border: 1px solid #ddd; color: #555; cursor: not-allowed;"
+						/>
+					</div>
+					
+					<div class="guest-mode-info" style="margin-top: 20px; text-align: center; font-size: 14px; color: #555;">
+						<p>You will be in <strong>Guest Mode</strong> unless the admin changes your access.</p>
+					</div>
+					<div class="form-control">
+						<label for="avatar">Choose an Avatar</label>
+						<select name="avatar" id="avatar">
+							<option value="default">Default Avatar</option>
+							<option value="cat">🐱 Cat</option>
+							<option value="dog">🐶 Dog</option>
+							<option value="robot">🤖 Robot</option>
+							<option value="alien">👽 Alien</option>
+						</select>
+					</div>
+					
+					<div class="form-control">
+						<label for="status">Set Your Status</label>
+						<input
+							type="text"
+							name="status"
+							id="status"
+							placeholder="Enter your status (e.g., Available, Busy)..."
+						/>
+					</div>
+					<button class="btn" style="background-color: #333; border-radius: 15px;">Join Chat</button>
 				</form>
+				<div class="social-login" style="text-align: center; margin: 20px;">
+					<p>Or log in with:</p>
+					<button style="background-color: #4267B2; color: white; padding: 10px; margin: 5px; border: none; border-radius: 5px; cursor: pointer;">
+						<i class="fab fa-facebook-f"></i> Facebook
+					</button>
+					<button style="background-color: #DB4437; color: white; padding: 10px; margin: 5px; border: none; border-radius: 5px; cursor: pointer;">
+						<i class="fab fa-google"></i> Google
+					</button>
+				</div>
+				
 			</main>
 		</div>
-		<div class="important-links">
-			<h2>Important Links!</h2>
-			<div class="button-container">
-				<button id="link1">
+		<div class="important-links" style="font-family: Arial, sans-serif; text-align: center; margin: 20px;">
+			<h2 style="color: #333;">Important Links!</h2>
+			<div class="button-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0;">
+				<button id="link1" style="background-color: #007bff; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer;">
 					<i class="fas fa-code"></i> ChatApp Repository
 				</button>
-				<button id="link2">
+				<button id="link2" style="background-color: #0077b5; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer;">
 					<i class="fab fa-linkedin"></i> LinkedIn
 				</button>
-				<button id="link3">
+				<button id="link3" style="background-color: #333; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer;">
 					<i class="fab fa-github"></i> Github
 				</button>
-				<button id="link4" style="padding: 0; border: none; background: none; border-radius: 20px;">
+				<button id="link4" style="padding: 0; border: none; background: none;">
 					<a target="_blank" href="./js/Suyash_agarwal .pdf" style="display: block; padding: 10px 20px; text-decoration: none; background: #4caf50; color: white; border-radius: 20px; text-align: center;">
 						<i class="fas fa-file-pdf"></i> Resume
 					</a>
 				</button>
-				<button id="link5">
+				<button id="link5" style="background-color: #ff9800; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer;">
 					<i class="fas fa-user-tie"></i> Portfolio
 				</button>
 			</div>
-			
+			<h4 style="margin-top: 20px; color: #555;">
+				Contact: <a href="tel:8085735401" style="color: #007bff; text-decoration: none;">8085735401</p> | 
+				Email: <a href="mailto:suyash1606.agarwal@gmail.com" style="color: #007bff; text-decoration: none;">suyash1606.agarwal@gmail.com</a> /
+				<a href="mailto:suyu.yt7@gmail.com" style="color: #007bff; text-decoration: none;">suyu.yt7@gmail.com</a>
+			</h4>
 		</div>
-		
 		
   		<script src="js/mainbtns.js"></script>
 	</body>
